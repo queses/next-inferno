@@ -1,17 +1,17 @@
 # Next.js + Inferno
 
-Use :fire: [Inferno](https://infernojs.org) with [Next.js](https://github.com/zeit/next.js) to get even faster :zap: rendering.
+Use [Inferno](https://infernojs.org) :fire: with [Next.js](https://github.com/zeit/next.js) to get even faster :zap: rendering.
 
 ## Installation
 
 ```
-npm install --save @zeit/next-inferno inferno inferno-compat inferno-clone-vnode inferno-create-class inferno-create-element
+npm install --save next-inferno inferno inferno-compat inferno-clone-vnode inferno-create-class inferno-create-element
 ```
 
 or
 
 ```
-yarn add @zeit/next-inferno inferno inferno-compat inferno-clone-vnode inferno-create-class inferno-create-element
+yarn add next-inferno inferno inferno-compat inferno-clone-vnode inferno-create-class inferno-create-element
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ Create a `next.config.js` in your project
 
 ```js
 // next.config.js
-const withInferno = require('@zeit/next-inferno')
+const withInferno = require('next-inferno')
 module.exports = withInferno()
 ```
 
@@ -28,7 +28,7 @@ Then create a `server.js`
 
 ```js
 // server.js
-require('@zeit/next-inferno/alias')()
+require('next-inferno/alias')()
 const { createServer } = require('http')
 const next = require('next')
 
@@ -60,7 +60,7 @@ Optionally you can add your custom Next.js configuration as parameter
 
 ```js
 // next.config.js
-const withInferno = require('@zeit/next-inferno')
+const withInferno = require('next-inferno')
 module.exports = withInferno({
   webpack(config, options) {
     return config

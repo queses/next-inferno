@@ -5,7 +5,25 @@
     "main": "index.js",
     "author": "Maxim Kobozev <quesesr@gmail.com>",
     "license": "MIT",
-    "repository": "zeit/next-plugins",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/queses/next-inferno.git"
+    },
+    "bugs": "https://github.com/queses/next-inferno/issues",
+    "tags": [
+      "inferno",
+      "react",
+      "ssr",
+      "next.js",
+      "next"
+    ],
+    "keywords": [
+      "inferno",
+      "react",
+      "ssr",
+      "next.js",
+      "next"
+    ],
     "peerDependencies": {
       "inferno": "^5.0.0",
       "inferno-compat": "^5.0.0",
