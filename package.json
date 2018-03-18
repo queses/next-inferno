@@ -1,6 +1,6 @@
 {
-    "name": "@zeit/next-inferno",
-    "version": "0.0.1",
+    "name": "next-inferno",
+    "version": "0.0.2",
     "description": "next.js + Inferno",
     "main": "index.js",
     "author": "Maxim Kobozev <quesesr@gmail.com>",
