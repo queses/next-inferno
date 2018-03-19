@@ -1,6 +1,6 @@
 {
     "name": "next-inferno",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "description": "next.js + Inferno",
     "main": "index.js",
     "author": "Maxim Kobozev <quesesr@gmail.com>",
@@ -15,14 +15,16 @@
       "react",
       "ssr",
       "next.js",
-      "next"
+      "next",
+      "typescript"
     ],
     "keywords": [
       "inferno",
       "react",
       "ssr",
       "next.js",
-      "next"
+      "next",
+      "typescript"
     ],
     "peerDependencies": {
       "inferno": "^5.0.0",
