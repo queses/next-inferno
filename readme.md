@@ -71,7 +71,7 @@ module.exports = withInferno({
 ## TypeScript support
 Looking for [TypeScript](http://www.typescriptlang.org/) support? Just follow that easy steps to use it in your Next projects:
 
-1. Install `typescript` and `@zeit/next-typescript` (aslo you can use [`next-awesome-typescript`](https://github.com/saitonakamura/next-awesome-typescript) for perfomance reasons):
+1. Install `typescript` and `@zeit/next-typescript`:
 
 ```
 npm install --save typescript @zeit/next-typescript
@@ -135,6 +135,22 @@ module.exports = withInferno(withTypescript({
   },
   typescriptLoaderOptions: {
     transpileOnly: false
+  }
+}))
+```
+
+Alternatively to decrease compile time you can use [`fork-ts-checker-webpack-plugin`](https://github.com/Realytics/fork-ts-checker-webpack-plugin) to fork type checks in a separate process:
+
+```json
+// next.config.js
+const withInferno = require("next-inferno")
+const withTypescript = require("@zeit/next-typescript")
+var ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+
+module.exports = withInferno(withTypescript({
+  webpack(config, options) {
+    if (options.isServer) config.plugins.push(new ForkTsCheckerWebpackPlugin())
+    return config
   }
 }))
 ```
