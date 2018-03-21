@@ -141,7 +141,7 @@ module.exports = withInferno(withTypescript({
 
 Alternatively to decrease compile time you can use [`fork-ts-checker-webpack-plugin`](https://github.com/Realytics/fork-ts-checker-webpack-plugin) to fork type checks in a separate process:
 
-```json
+```js
 // next.config.js
 const withInferno = require("next-inferno")
 const withTypescript = require("@zeit/next-typescript")
